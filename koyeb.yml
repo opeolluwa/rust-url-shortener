@@ -1,0 +1,1 @@
+koyeb app init rrx --docker opeolluwa/rustly --ports 8000:http --routes /:8000  

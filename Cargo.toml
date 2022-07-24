@@ -1,0 +1,31 @@
+[package]
+name = "rustly"
+version = "0.1.0"
+edition = "2021"
+authors = ["Adeoye Adefemi<adefemiadeoye@yahoo.com>"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"         #to read and parse .env files
+mysql = "22.2.0"          #database driver
+dotenv_codegen = "0.15.0" # This is a dependency of dotenv to read env using a macro
+nanoid = "0.4.0"
+serde = "1.0.138"
+chrono = "0.4.19"
+# rust-embed = "6.4.0"
+# bcrypt = "0.13.0"
+
+#template engines
+[dependencies.rocket_dyn_templates]
+version = "0.1.0-rc.2"
+features = ["handlebars"]
+
+[dependencies.rocket]
+version = "0.5.0-rc.2"     #web framework
+features = ["json"]
+#database connection
+[dependencies.rocket_db_pools]
+version = "0.1.0-rc.2"
+features = ["sqlx_mysql"]
+
+

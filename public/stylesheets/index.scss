@@ -1,0 +1,17 @@
+//import dependents
+@import "./globals/variables.scss";
+@import "./globals/colors.scss";
+@import "./globals/mixin.scss";
+@import "./globals/classes.scss";
+@import "./components/loaders";
+
+html,
+body {
+  @include reset;
+  @include fonts;
+}
+
+@import "./partials/header.scss";
+@import "./partials/main.scss";
+@import "./partials/footer.scss";
+@import "./pages/login.scss";

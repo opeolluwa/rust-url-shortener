@@ -1,0 +1,39 @@
+//reset to restore the page settings to the default state
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+}
+
+//fonts to set the default font family and size
+@mixin fonts {
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+@mixin button($bg: transparent, $font: #101010) {
+  background: transparent;
+  color: $font;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

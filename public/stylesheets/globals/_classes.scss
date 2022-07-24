@@ -1,0 +1,109 @@
+.d-desktop {
+  display: none;
+  @media (min-width: 600px) {
+    display: block;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.d-desktop-none{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .d-mobile-node {
+    display: none;
+  }
+  .d-desktop-none{
+    display: unset;
+  }
+}
+
+
+//desktop only
+.view {
+  padding: 0 100px;
+  margin-bottom: 4rem;
+
+  @media (max-width: 600px) {
+    padding: 0 40px;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.d-none {
+  display: none;
+}
+.btn {
+  background: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.btn.disabled {
+  color: $blue;
+}
+.error,
+.success {
+  color: #fd4147 !important;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 30ms 300ms ease-in-out;
+  margin: inherit;
+  margin-top: -0.5rem;
+  margin-left: 30px;
+}
+.success {
+  color: #34b90b !important;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 30ms 300ms ease-in-out;
+  margin: inherit;
+  margin-top: -0.5rem;
+  margin-left: 30px;
+}
+.error-message {
+  display: none;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.box-shadow {
+  box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
+  -webkit-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
+  -moz-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
+}
