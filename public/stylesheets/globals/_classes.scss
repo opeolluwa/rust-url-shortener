@@ -8,7 +8,7 @@
 .text-center {
   text-align: center;
 }
-.d-desktop-none{
+.d-desktop-none {
   display: none;
 }
 
@@ -16,20 +16,17 @@
   .d-mobile-node {
     display: none;
   }
-  .d-desktop-none{
+  .d-desktop-none {
     display: unset;
   }
 }
 
-
 //desktop only
 .view {
   padding: 0 100px;
-  margin-bottom: 4rem;
 
   @media (max-width: 600px) {
     padding: 0 40px;
-    margin-bottom: 2.5rem;
   }
 }
 
@@ -52,11 +49,11 @@
 .d-none {
   display: none;
 }
-.btn {
-  background: #ffc107;
-  color: #fff;
+.control {
+  background: $white;
+  color: $blue;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 700;

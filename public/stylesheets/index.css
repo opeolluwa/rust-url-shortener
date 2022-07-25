@@ -26,12 +26,10 @@
 }
 .view {
   padding: 0 100px;
-  margin-bottom: 4rem;
 }
 @media (max-width: 600px) {
   .view {
     padding: 0 40px;
-    margin-bottom: 2.5rem;
   }
 }
 
@@ -55,11 +53,11 @@
   display: none;
 }
 
-.btn {
-  background: #ffc107;
-  color: #fff;
+.control {
+  background: #f2f2f2;
+  color: #6437a0;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 700;
@@ -160,52 +158,6 @@ body {
   font-size: 16px;
 }
 
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-header ul li {
-  line-height: 24px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 10.5px 5px;
-  margin: 0.5rem;
-  text-transform: capitalize;
-}
-header ul li a {
-  color: #101010;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-@media screen and (max-width: 600px) {
-  header ul li {
-    display: none;
-  }
-}
-
-header nav {
-  padding-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px unset !important;
-}
-
-header nav .nav-trigger {
-  font-size: 2rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-header a.brand-logo {
-  text-decoration: none;
-  font-size: 1.35rem;
-  color: #101010;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-}
-
 .container > div {
   margin-bottom: 125px;
 }
@@ -239,76 +191,6 @@ header a.brand-logo {
   text-transform: uppercase;
 }
 
-main .container #hero {
-  max-width: 65%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(60vh - 30px);
-  margin-top: 10vh;
-  align-items: center;
-}
-@media screen and (max-width: 600px) {
-  main .container #hero {
-    max-width: 85%;
-    margin-bottom: 7.5vh;
-    display: block;
-  }
-}
-main .container h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 65px;
-  font-stretch: expanded;
-  text-align: center;
-}
-@media screen and (max-width: 600px) {
-  main .container h1 {
-    font-size: 2.5rem;
-    line-height: 55px;
-  }
-}
-main .container h1 .gradient {
-  background: linear-gradient(90deg, #4d2088 0%, #6437a0, #aa3f61, #ff5e64, #ff7747, #fb9633);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: underline 2px solid red;
-}
-main .container h1 + p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  line-height: 35px;
-  font-stretch: expanded;
-  color: #7d7d7d;
-  line-height: 36px;
-  text-align: center;
-}
-@media screen and (max-width: 600px) {
-  main .container h1 + p {
-    line-height: 36px;
-    margin-bottom: 2rem;
-  }
-}
-
-main .container form .form-field {
-  display: grid;
-  grid-template-columns: 3.5fr 1.2fr;
-  align-items: center;
-  border-radius: 5px;
-  padding: 7.5px 5px;
-  margin-top: 2rem;
-  box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-}
-@media screen and (max-width: 600px) {
-  main .container form .form-field {
-    grid-template-columns: 1fr;
-    margin-top: 1rem;
-  }
-}
 main .container form .form-field button,
 main .container form .form-field input {
   border: none;
@@ -329,12 +211,12 @@ main .container form .form-field button {
   font-weight: 700;
   cursor: pointer;
   transition: all 300ms ease-in-out;
-  background: #6437a0;
+  background: linear-gradient(-56deg, #6437a0 40%, #ff5e64 85%, #4d2088);
   text-transform: capitalize;
 }
 main .container form .form-field input {
   padding-left: 30px;
-  border-radius: 5px 0 5px 0;
+  border-radius: 5px;
   color: black;
 }
 main .container form .form-field input:hover,
@@ -352,9 +234,13 @@ main .container form .form-field ::placeholder {
   font-family: inherit;
 }
 
-main .container #about {
+main .container {
   display: grid;
   background-color: #6437a0;
+  background-image: url("../img/hero-background.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f2f2f2;
   min-height: calc(80vh - 30px);
   position: relative;
@@ -364,28 +250,19 @@ main .container #about {
   align-items: center;
   text-align: center;
 }
-main .container #about p {
+main .container p {
   text-align: center !important;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 600px) {
-  main .container #about {
+  main .container {
     display: block;
     padding: 100px 30px;
   }
 }
-main .container #about img {
-  object-fit: fit;
-  max-width: 80%;
-}
-@media screen and (max-width: 600px) {
-  main .container #about img {
-    display: none;
-  }
-}
-main .container #about a.btn {
+main .container a.btn {
   border-radius: 24px;
   box-sizing: border-box;
   margin: 0.5rem;
@@ -409,194 +286,9 @@ main .container #about a.btn {
   min-height: 2.2rem;
 }
 @media screen and (max-width: 600px) {
-  main .container #about a.btn {
+  main .container a.btn {
     min-width: 100%;
   }
-}
-
-main #pricing {
-  /*  & div.view:last-child {
-    flex-direction: column;
-    justify-content: space-between;
-  } */
-}
-main #pricing div.view:first-child {
-  text-align: center;
-}
-main #pricing div.view:first-child h2 {
-  margin-bottom: 0;
-  padding: 0;
-}
-main #pricing div.view:first-child p {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0;
-  color: #7d7d7d;
-}
-main #pricing .price-card {
-  border: 2px solid #e6e6e6;
-  border-radius: 12px;
-  transition: 300ms ease;
-  transition-delay: 100ms;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  padding: 10px;
-  text-align: center;
-  min-height: 45vh;
-}
-main #pricing .price-card:hover {
-  background: #6437a0;
-  color: #f2f2f2;
-  box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -webkit-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -moz-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-}
-main #pricing .price-card h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 45px;
-  font-stretch: expanded;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-main #pricing .price-card sub,
-main #pricing .price-card sup {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-  line-height: 28px;
-  border: none;
-  border-radius: 0;
-  color: #7d7d7d;
-}
-main #pricing .price-card .price {
-  font-size: 3.5rem;
-  display: block;
-  text-align: center;
-  position: relative;
-  bottom: 2px;
-  margin-top: 5rem;
-}
-
-.custom-shape-divider-top-1657562747 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1657562747 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 48px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1657562747 .shape-fill {
-  fill: #ffffff;
-}
-
-footer {
-  background-color: #101010;
-  margin-bottom: 0;
-  padding: 20px 0;
-  color: #f2f2f2;
-}
-footer a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-footer {
-  font-weight: 400;
-  color: #f2f2f2;
-  text-transform: capitalize;
-  padding-top: 30px;
-}
-footer > * {
-  display: block;
-}
-footer .view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 600px) {
-  footer .view {
-    padding: 10px 25px;
-  }
-}
-footer hr.view {
-  border: 1px solid #3f3e3e;
-  display: flex;
-  max-width: 80%;
-  text-align: center;
-  margin: 0.35rem auto;
-}
-footer a {
-  color: inherit;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0.5rem;
-  text-transform: capitalize;
-}
-footer ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-@media screen and (max-width: 600px) {
-  footer .view {
-    display: block;
-    text-align: center;
-  }
-  footer ul {
-    display: block;
-    text-align: center;
-  }
-  footer ul li {
-    margin: 0.75rem 0;
-  }
-  footer ul.socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-  }
-  footer hr.view {
-    margin: 0.5rem 0;
-    padding: 0;
-    max-width: 45%;
-    border-width: 1px;
-    border-style: dashed;
-    margin: 0.75rem auto;
-  }
-}
-
-main#login .form-field {
-  box-shadow: none;
-}
-
-main#login {
-  border-radius: 5px;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-main#login form {
-  border: 1px solid #e6e6e6;
 }
 
 /*# sourceMappingURL=index.css.map */

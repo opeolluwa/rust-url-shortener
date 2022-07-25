@@ -6,32 +6,6 @@
     <title>{{title}}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="static/img/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="static/img/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="static/img/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="static/img/icon/site.webmanifest" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
 
     <link
       rel="stylesheet"
@@ -40,97 +14,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="static/stylesheets/index.css" />
     <link rel="stylesheet" href="static/owlcarousel/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="static/owlcarousel/owl.theme.default.min.css"
-    />
+
   </head>
   <body>
-    <header>
-      <nav class="view nav">
-        <div>
-          <a href="/" class="brand-logo">
-            {{! <img src="static/img/logo.png" alt="logo" /> }}
-            Rust.ly
-          </a>
-        </div>
-        <div class="nav-wrapper">
-
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-            <li>
-              <a href="/">home</a>
-            </li>
-            <li>
-              <a href="/#pricing">pricing</a>
-            </li>
-            <li>
-              <a href="/#contact">Contact</a>
-            </li>
-            <li>
-              {{! <a href="/login">login</a> }}
-            </li>
-          </ul>
-        </div>
-        <div class="nav-trigger bi-list d-desktop-none"></div>
-      </nav>
-    </header>
     <main>
       <div class="container">
-        <div id="hero" class="view">
-          <div>
-            <h1 id="hero-text" class="capitalize">
-              One Short link,
-              <br class="d-desktop" />
-              infinite
-              <span class="gradient">possibilities.</span>
-            </h1>
+        <div class="view">
 
-            <p
-              class="sub-hero"
-              data-aos="fade-in"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1200"
-              data-aso-delay="300"
-            >
-              transportation pet zoo sang strength facing shown dig planning
-              closer factory rhythm mostly unit poem require seven simplest list
-              visit mistake loss
-            </p>
-            <!--form-->
-
-            <form action="/api/v1/links/minify" method="post" id="try-now-form">
-              <div class="form-field box-shadow">
-                <input
-                  type="text"
-                  name="uri"
-                  id=""
-                  placeholder="https://example.com/awesome"
-                />
-                <button type="submit" class="btn">try now 🚀 </button>
-                <span class="error-message error">Please enter a valid url
-                  starting with http:// or https://</span>
-                <span class="minified-link success"></span>
-              </div>
-            </form>
-
-          </div>
-
-        </div>
-        <div id="about" class="view">
-          <div class="custom-shape-divider-top-1657562747">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
           <div class="title" style="text-align: center;">
             <h2
               data-aos="fade-up"
@@ -152,96 +42,30 @@
               operation crop driving please nails seed are appropriate nearby
               alphabet real somewhere heavy face
             </p>
-            <a href="/#pricing" class="btn"> Learn More</a>
           </div>
 
-          <div>
-            <img src="/static/img/illustration/about.png" alt="about" />
-          </div>
+          <form action="/api/v1/links/minify" method="post" id="try-now-form">
+            <div class="form-field">
+              <input
+                type="text"
+                name="uri"
+                id=""
+                placeholder="https://example.com/awesome"
+                  class="control"
+              />
+
+            </div>
+            <span class="error-message error">Please enter a valid url starting
+              with http:// or https://</span>
+            <span class="minified-link success"></span>
+            <button type="submit" class="control .btn">try now 🚀 </button>
+            <div class="form-control"></div>
+          </form>
         </div>
-
-        <div id="pricing">
-          <div class="view">
-            <h2
-              data-aos="fade-in"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1300"
-              data-aso-delay="200"
-            >Flexible Plans</h2>
-            <p class="sub-hero-text text-center">We&apos;ve got the right plan
-              for your needs</p>
-          </div>
-
-         
-          <div class="view d-none">
-            <div class="price-card">
-              <h3 class="capital">Lite
-              </h3>
-              <p>amet consectetur adipisicing elit.</p>
-              <div class="price"><sup>$</sup>
-                20
-                <sub>/ URL</sub></div>
-            </div>
-
-            <div class="price-card">
-              <h3 class="capital">Basic
-              </h3>
-              <p>amet consectetur adipisicing elit.</p>
-              <div class="price"><sup>$</sup>
-                40
-                <sub>/ URL</sub></div>
-            </div>
-
-            <div class="price-card">
-              <h3 class="capital">Enteprise
-              </h3>
-              <p>amet consectetur adipisicing elit.</p>
-              <div class="price"><sup>$</sup>
-                60
-                <sub>/ URL</sub></div>
-            </div>
-          </div>
-
-        </div>
-        <div id="testimonials"></div>
       </div>
     </main>
-    <footer>
-      <div class="view">
-        <a href="/">Rustly</a>
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Cookie policy</a></li>
-        </ul>
-      </div>
-      <hr class="view" />
-      <div class="view">
-        <div>
-          &copy;
-          {{current_year}}
-          <a href="https://www.linkedin/in/adeoye-ao">Ọpẹ́olúwa</a>
-          <span class="d-desktop">All rights reserved.</span>
-        </div>
-        <ul class="socials">
-          <li><a href="https://github.com/opeolluwa" class="bi-github"></a></li>
-          <li><a
-              href="https://twitter.com/_opeolluwa"
-              class="bi-twitter"
-            ></a></li>
-          <li><a
-              href="https://www.linked/in/adeoye-ao"
-              class="bi-linkedin"
-            ></a></li>
 
-        </ul>
-      </div>
-
-    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="static/scripts/dist/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="static/scripts/dist/owl.carousel.min.js"></script>
     <script>
       AOS.init();
     </script>
