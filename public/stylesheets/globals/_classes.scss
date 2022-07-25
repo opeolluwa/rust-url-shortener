@@ -60,6 +60,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   position: relative;
+  width: 100%;
 }
 
 .btn.disabled {
@@ -99,8 +100,4 @@
   display: block;
 }
 
-.box-shadow {
-  box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -webkit-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -moz-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-}
+

@@ -64,6 +64,7 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   position: relative;
+  width: 100%;
 }
 
 .btn.disabled {
@@ -109,12 +110,6 @@
   display: block;
 }
 
-.box-shadow {
-  box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -webkit-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-  -moz-box-shadow: 1px 5px 42px -17px rgba(23, 20, 20, 0.54);
-}
-
 .loader {
   border: 5px solid #f3f3f3;
   border-radius: 50%;
@@ -158,12 +153,15 @@ body {
   font-size: 16px;
 }
 
-.container > div {
-  margin-bottom: 125px;
-}
-
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container .view {
+  max-width: 70%;
 }
 .container h2 {
   font-size: 2.5rem;
@@ -235,7 +233,6 @@ main .container form .form-field ::placeholder {
 }
 
 main .container {
-  display: grid;
   background-color: #6437a0;
   background-image: url("../img/hero-background.svg");
   background-position: center center;
@@ -243,24 +240,6 @@ main .container {
   background-size: cover;
   color: #f2f2f2;
   min-height: calc(80vh - 30px);
-  position: relative;
-  padding: 100px;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-main .container p {
-  text-align: center !important;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (max-width: 600px) {
-  main .container {
-    display: block;
-    padding: 100px 30px;
-  }
 }
 main .container a.btn {
   border-radius: 24px;
